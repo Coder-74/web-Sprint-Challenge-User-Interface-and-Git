@@ -16,7 +16,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -66,6 +65,29 @@ p {
     line-height: 1.4;
 }
 
+header{
+    width: 800px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logolinks{
+justify-content:left;
+padding: 20px
+}
+
+.nav{
+    padding: 30px;
+}
+.toprow{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+    }
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -78,6 +100,10 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+.box {
+background-color: teal;
+}
+
 
 .top-content .text-container {
     width: 48%;
@@ -101,7 +127,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
     height: 100px;
     background: black;
@@ -111,6 +137,7 @@ p {
     align-items: center;
     justify-content: center;
 }
+/* I have tried to change the colors of the boxes by creating a new class for each box (ie "box1, box2, etc).I have even tried using bgcolor in the html screen. */
 
 .bottom-content {
     display: flex;
